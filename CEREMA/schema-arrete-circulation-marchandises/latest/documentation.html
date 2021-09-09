@@ -319,7 +319,7 @@
       
       
       
-      <h2>CEREMA/schema-arrete-circulation-marchandises <small><span class="label">0.6.2</span></small></h2>
+      <h2>CEREMA/schema-arrete-circulation-marchandises <small><span class="label">0.6.3</span></small></h2>
       
       <div class="text-quote">
         <ul>
@@ -329,7 +329,7 @@
           
             
             <li>
-              <a href="/schemas/CEREMA/schema-arrete-circulation-marchandises/0.6.2/schema.json">Schéma Arrêtés permanents de circulation pour le transport de marchandises 0.6.2 (format tableschema)</a>
+              <a href="/schemas/CEREMA/schema-arrete-circulation-marchandises/0.6.3/schema.json">Schéma Arrêtés permanents de circulation pour le transport de marchandises 0.6.3 (format tableschema)</a>
             </li>
             
           
@@ -338,6 +338,12 @@
           <li>Versions disponibles :
             <ul>
             
+            
+              <li>
+                <a href="/CEREMA/schema-arrete-circulation-marchandises/0.6.3.html">
+                  0.6.3
+                </a>
+              </li>
             
               <li>
                 <a href="/CEREMA/schema-arrete-circulation-marchandises/0.6.2.html">
@@ -389,7 +395,7 @@
       
       
       <div class="form__group" style="margin-top: 3em">
-        <a href="/CEREMA/schema-arrete-circulation-marchandises/0.6.2/documentation.html" title="Documentation du modèle de données" class="button icon-button">
+        <a href="/CEREMA/schema-arrete-circulation-marchandises/0.6.3/documentation.html" title="Documentation du modèle de données" class="button icon-button">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 22v-20h16v11.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6h-7.362zm18-7.614v-14.386h-20v24h10.189c3.163 0 9.811-7.223 9.811-9.614zm-5-1.386h-10v-1h10v1zm0-4h-10v1h10v-1zm0-3h-10v1h10v-1z"/></svg>
           Lire la documentation
         </a>
@@ -399,7 +405,7 @@
           Saisir des données
         </a>
 
-        <a href="https://validata.etalab.studio/table-schema?schema_url=https://schema.data.gouv.fr/schemas/CEREMA/schema-arrete-circulation-marchandises/0.6.2/schema.json" title="Valider des données" class="button icon-button">
+        <a href="https://validata.etalab.studio/table-schema?schema_url=https://schema.data.gouv.fr/schemas/CEREMA/schema-arrete-circulation-marchandises/0.6.3/schema.json" title="Valider des données" class="button icon-button">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
           Valider des données
         </a>
@@ -584,7 +590,7 @@
 <h4 id="identifiant-de-lentité---propriété-id">Identifiant de l’entité - Propriété <code class="highlighter-rouge">ID</code></h4>
 
 <blockquote>
-  <p><em>Description : Il s’agit de l’identifiant de l’entité (ou ligne du tableau). Ce dernier doit être unique. L’entité élémentaire correspond à une voie entière règlementée (par ex. <code class="highlighter-rouge">Avenue Philippe Solari</code>) ou une portion de celle-ci (voir les champs <code class="highlighter-rouge">SECTION_DEBUT</code> et <code class="highlighter-rouge">SECTION_FIN</code>). L’identifiant peut tout simplement être auto-incrémenté (1, 2 ou 3,…). Il peut correspondre à la valeur <code class="highlighter-rouge">osm_id</code> de la voie règlementée (par exemple, <code class="highlighter-rouge">133</code>). Il peut également être un identifiant propre à une structure ou à une autre base de données (identifiant issu de la BDTOPO IGN, par exemple). <a href="https://heidi.app.etalab.studio/">Vous pouvez créer des identifiants grâce à l’application Heidi d’Etalab</a>.<br />Ex : 133-3</em></p>
+  <p><em>Description : Il s’agit de l’identifiant de l’entité (ou ligne du tableau). Ce dernier doit être unique. L’identifiant peut tout simplement être auto-incrémenté (1, 2 ou 3,…). Il peut correspondre à la valeur <code class="highlighter-rouge">osm_id</code> de la voie règlementée (par exemple, <code class="highlighter-rouge">133</code>). Il peut également être un identifiant propre à une structure ou à une autre base de données (identifiant issu de la BDTOPO IGN, par exemple). <a href="https://heidi.app.etalab.studio/">Vous pouvez créer des identifiants grâce à l’application Heidi d’Etalab</a>.<br />Ex : 133-3</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : chaîne de caractères</li>
@@ -821,7 +827,7 @@
 <h4 id="début-de-la-section---propriété-emprise_debut">Début de la section - Propriété <code class="highlighter-rouge">EMPRISE_DEBUT</code></h4>
 
 <blockquote>
-  <p><em>Description : Indication de l’endroit à partir duquel la règlementation s’applique, telle qu’écrite dans l’arrêté. Ou bien coordonnées GPS de l’endroit, à noter sous la forme ‘long, lat’ (5 ou 6 décimales sont conseillées).<br />Ex : 22 avenue Philippe Solari, Croisement de l’avenue Philippe Solari avec la rue Gaston de Saporta, 43.53591,5.42101</em></p>
+  <p><em>Description : Indication de l’endroit à partir duquel la règlementation s’applique, telle qu’écrite dans l’arrêté. Ou bien coordonnées GPS de l’endroit, à noter sous la forme ‘long,lat’ (5 ou 6 décimales sont conseillées).<br />Ex : 22 avenue Philippe Solari, Croisement de l’avenue Philippe Solari avec la rue Gaston de Saporta, 5.42101,43.53591</em></p>
   <ul>
     <li>Valeur optionnelle</li>
     <li>Type : chaîne de caractères</li>
@@ -831,7 +837,7 @@
 <h4 id="fin-de-la-section---propriété-emprise_fin">Fin de la section - Propriété <code class="highlighter-rouge">EMPRISE_FIN</code></h4>
 
 <blockquote>
-  <p><em>Description : Indication de l’endroit au bout duquel la règlementation s’applique, telle qu’écrite dans l’arrêté. Ou bien coordonnées GPS de l’endroit, à noter sous la forme ‘long, lat’ (5 ou 6 décimales sont conseillées).<br />Ex : 22 avenue Philippe Solari, Croisement de l’avenue Philippe Solari avec la rue Gaston de Saporta</em></p>
+  <p><em>Description : Indication de l’endroit au bout duquel la règlementation s’applique, telle qu’écrite dans l’arrêté. Ou bien coordonnées GPS de l’endroit, à noter sous la forme ‘long, lat’ (5 ou 6 décimales sont conseillées).<br />Ex : 34 bis avenue Philippe Solari, Intersection de l’avenue Philippe Solari avec le boulevard des Charmettes, 5.43345,43.64789</em></p>
   <ul>
     <li>Valeur optionnelle</li>
     <li>Type : chaîne de caractères</li>
@@ -882,7 +888,7 @@
 <h4 id="géométrie-au-format-wkt---propriété-geom_wkt">Géométrie au format WKT - Propriété <code class="highlighter-rouge">GEOM_WKT</code></h4>
 
 <blockquote>
-  <p><em>Description : Géométrie de la rue (ligne), ou de l’emprise (polygone) exprimée au format <a href="https://fr.wikipedia.org/wiki/Well-known_text">WKT (Well Know Text</a> sous le système de projection WGS84 (EPSG:4326)<br />Ex : LineString (5.39340184 45.56538751, 5.41017215 45.56722934, 5.42510063 45.5679079)</em></p>
+  <p><em>Description : Géométrie de la rue (ligne), ou de l’emprise (polygone) exprimée au format <a href="https://fr.wikipedia.org/wiki/Well-known_text">WKT (Well Know Text</a> sous le système de projection WGS84 (EPSG:4326)<br />Ex : LineString(5.39340184 45.56538751, 5.41017215 45.56722934, 5.42510063 45.5679079)</em></p>
   <ul>
     <li>Valeur optionnelle</li>
     <li>Type : chaîne de caractères</li>
