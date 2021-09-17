@@ -325,7 +325,7 @@
       
       
       
-      <h2>etalab/schema-vehicules-faibles-emissions-renouvellement-parc <small><span class="label">0.1.0</span></small></h2>
+      <h2>etalab/schema-vehicules-faibles-emissions-renouvellement-parc <small><span class="label">0.1.1</span></small></h2>
       
       <div class="text-quote">
         <ul>
@@ -335,7 +335,7 @@
           
             
             <li>
-              <a href="/schemas/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.0/schema.json">Schéma Part des véhicules à faibles émissions dans le renouvellement d'un parc 0.1.0 (format tableschema)</a>
+              <a href="/schemas/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.1/schema.json">Schéma Part des véhicules à faibles émissions dans le renouvellement d'un parc 0.1.1 (format tableschema)</a>
             </li>
             
           
@@ -344,6 +344,12 @@
           <li>Versions disponibles :
             <ul>
             
+            
+              <li>
+                <a href="/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.1.html">
+                  0.1.1
+                </a>
+              </li>
             
               <li>
                 <a href="/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.0.html">
@@ -359,7 +365,7 @@
       
       
       <div class="form__group" style="margin-top: 3em">
-        <a href="/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.0/documentation.html" title="Documentation du modèle de données" class="button icon-button">
+        <a href="/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.1/documentation.html" title="Documentation du modèle de données" class="button icon-button">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 22v-20h16v11.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6h-7.362zm18-7.614v-14.386h-20v24h10.189c3.163 0 9.811-7.223 9.811-9.614zm-5-1.386h-10v-1h10v1zm0-4h-10v1h10v-1zm0-3h-10v1h10v-1z"/></svg>
           Lire la documentation
         </a>
@@ -369,7 +375,7 @@
           Saisir des données
         </a>
 
-        <a href="https://validata.etalab.studio/table-schema?schema_url=https://schema.data.gouv.fr/schemas/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.0/schema.json" title="Valider des données" class="button icon-button">
+        <a href="https://validata.etalab.studio/table-schema?schema_url=https://schema.data.gouv.fr/schemas/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/0.1.1/schema.json" title="Valider des données" class="button icon-button">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
           Valider des données
         </a>
@@ -385,7 +391,7 @@
 <ul>
   <li>Schéma créé le : 15/09/2021</li>
   <li>Site web : https://github.com/etalab/schema-flotte-publique-vehicule</li>
-  <li>Version : 0.1.0</li>
+  <li>Version : 0.1.1</li>
 </ul>
 
 <h3 id="modèle-de-données">Modèle de données</h3>
@@ -607,6 +613,11 @@
       <td>Oui</td>
     </tr>
     <tr>
+      <td><a href="#propriété-nbbusm2eurovi">nbBusM2EuroVI</a></td>
+      <td>nombre entier</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
       <td><a href="#propriété-nbbusm3">nbBusM3</a></td>
       <td>nombre entier</td>
       <td>Oui</td>
@@ -648,6 +659,11 @@
     </tr>
     <tr>
       <td><a href="#propriété-nbbusm3xtl">nbBusM3XTL</a></td>
+      <td>nombre entier</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td><a href="#propriété-nbbusm3eurovi">nbBusM3EuroVI</a></td>
       <td>nombre entier</td>
       <td>Oui</td>
     </tr>
@@ -712,7 +728,12 @@
       <td>Oui</td>
     </tr>
     <tr>
-      <td><a href="#propriété-nbcarsxtl">nbCarsXTL</a></td>
+      <td><a href="#propriété-nbcarxtl">nbCarXTL</a></td>
+      <td>nombre entier</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td><a href="#propriété-nbcareurovi">nbCarEuroVI</a></td>
       <td>nombre entier</td>
       <td>Oui</td>
     </tr>
@@ -815,15 +836,15 @@
 <h4 id="propriété-zone">Propriété <code class="highlighter-rouge">zone</code></h4>
 
 <blockquote>
-  <p><em>Description : Situation géographique s’agissant des transports publics.<br />Ex : 47.72B</em></p>
+  <p><em>Description : Situation géographique s’agissant des transports publics.<br />Ex : Zone A</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : chaîne de caractères</li>
     <li>Valeurs autorisées :
       <ul>
-        <li>Zone A (1)</li>
-        <li>Zone B (2)</li>
-        <li>Zone C (3)</li>
+        <li>Zone A</li>
+        <li>Zone B</li>
+        <li>Zone C</li>
       </ul>
     </li>
   </ul>
@@ -862,7 +883,7 @@
 <h4 id="propriété-nbvpclean">Propriété <code class="highlighter-rouge">nbVPclean</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre de VP à faibles émissions.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre de VP à faibles émissions (y compris les nbVPEL et nbVPH2).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -912,7 +933,7 @@
 <h4 id="propriété-nbn1infclean">Propriété <code class="highlighter-rouge">nbN1infclean</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre de VUL de PTAC inférieur à 2,6 tonnes à faibles émissions.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre de VUL de PTAC inférieur à 2,6 tonnes à faibles émissions (y compris les nbN1infEL et nbN1infH2).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -952,7 +973,7 @@
 <h4 id="propriété-nbn1supclean">Propriété <code class="highlighter-rouge">nbN1supclean</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre de VUL de PTAC supérieur ou égal à 2,6 tonnes à faibles émissions.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre de VUL de PTAC supérieur ou égal à 2,6 tonnes à faibles émissions (y compris les nbN1supEL et nbN1supH2).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1052,7 +1073,7 @@
 <h4 id="propriété-nbn23bio">Propriété <code class="highlighter-rouge">nbN23Bio</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre de PL exclusivement aux biocarburants avancés.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre de PL exclusivement aux biocarburants.<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1112,7 +1133,7 @@
 <h4 id="propriété-nbbusm2clean">Propriété <code class="highlighter-rouge">nbBusM2clean</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre d’autobus M2 à faibles émissions.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre d’autobus M2 à faibles émissions  (y compris les nbBusM2EL et nbBusM2H2).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1162,7 +1183,7 @@
 <h4 id="propriété-nbbusm2bio">Propriété <code class="highlighter-rouge">nbBusM2Bio</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre d’autobus M2 exclusivement aux biocarburants avancés.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre d’autobus M2 exclusivement aux biocarburants.<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1173,6 +1194,16 @@
 
 <blockquote>
   <p><em>Description : Nombre d’autobus M2 exclusivement à carburants de synthèse ou paraffiniques.<br />Ex : 12</em></p>
+  <ul>
+    <li>Valeur obligatoire</li>
+    <li>Type : nombre entier</li>
+  </ul>
+</blockquote>
+
+<h4 id="propriété-nbbusm2eurovi">Propriété <code class="highlighter-rouge">nbBusM2EuroVI</code></h4>
+
+<blockquote>
+  <p><em>Description : Nombre d’autobus M2 hybrides non électriques ou diesel satisfaisant au moins à la norme Euro VI (uniquement en zone C).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1252,7 +1283,7 @@
 <h4 id="propriété-nbbusm3bio">Propriété <code class="highlighter-rouge">nbBusM3Bio</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre d’autobus M3 exclusivement aux biocarburants avancés.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre d’autobus M3 exclusivement aux biocarburants.<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1263,6 +1294,16 @@
 
 <blockquote>
   <p><em>Description : Nombre d’autobus M3 exclusivement à carburants de synthèse ou paraffiniques.<br />Ex : 12</em></p>
+  <ul>
+    <li>Valeur obligatoire</li>
+    <li>Type : nombre entier</li>
+  </ul>
+</blockquote>
+
+<h4 id="propriété-nbbusm3eurovi">Propriété <code class="highlighter-rouge">nbBusM3EuroVI</code></h4>
+
+<blockquote>
+  <p><em>Description : Nombre d’autobus M3 hybrides non électriques ou diesel satisfaisant au moins à la norme Euro VI (uniquement en zone C).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1312,7 +1353,7 @@
 <h4 id="propriété-nbcarm2clean">Propriété <code class="highlighter-rouge">nbCarM2clean</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre d’autocars M2 à faibles émissions.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre d’autocars M2 à faibles émissions (y compris les nbCarM2EL et nbCarM2H2).<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1382,17 +1423,27 @@
 <h4 id="propriété-nbcarbio">Propriété <code class="highlighter-rouge">nbCarBio</code></h4>
 
 <blockquote>
-  <p><em>Description : Nombre d’autocars exclusivement aux biocarburants avancés.<br />Ex : 12</em></p>
+  <p><em>Description : Nombre d’autocars exclusivement aux biocarburants.<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
   </ul>
 </blockquote>
 
-<h4 id="propriété-nbcarsxtl">Propriété <code class="highlighter-rouge">nbCarsXTL</code></h4>
+<h4 id="propriété-nbcarxtl">Propriété <code class="highlighter-rouge">nbCarXTL</code></h4>
 
 <blockquote>
   <p><em>Description : Nombre d’autocars exclusivement à carburants de synthèse ou paraffiniques.<br />Ex : 12</em></p>
+  <ul>
+    <li>Valeur obligatoire</li>
+    <li>Type : nombre entier</li>
+  </ul>
+</blockquote>
+
+<h4 id="propriété-nbcareurovi">Propriété <code class="highlighter-rouge">nbCarEuroVI</code></h4>
+
+<blockquote>
+  <p><em>Description : Nombre d’autocars hybrides non électriques ou diesel satisfaisant au moins à la norme Euro VI.<br />Ex : 12</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre entier</li>
@@ -1412,7 +1463,7 @@
 <h4 id="propriété-pcentldvtfe">Propriété <code class="highlighter-rouge">pcentLDVTFE</code></h4>
 
 <blockquote>
-  <p><em>Description : Part de véhicules à très faibles émissions dans le renouvellement des flottes de véhicules de PTAC inférieur ou égal à 3,5 tonnes (VP+VUL). Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPEL, nbVEH2, nbN1infEL, nbN1infH2, nbN1supEL et nbN1supH2, sur la somme des valeurs des champs nbVP et nbN1.<br />Ex : 12.2</em></p>
+  <p><em>Description : Part de véhicules à très faibles émissions dans le renouvellement des flottes de véhicules de PTAC inférieur ou égal à 3,5 tonnes (VP+VUL). Correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPEL, nbVPH2, nbN1infEL, nbN1infH2, nbN1supEL et nbN1supH2, sur la somme des valeurs des champs nbVP et nbN1.<br />Ex : 12.2</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : nombre réel</li>
