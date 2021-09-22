@@ -331,7 +331,7 @@
       
       
       
-      <h2>arsante/schema-dae <small><span class="label">1.0.2</span></small></h2>
+      <h2>arsante/schema-dae <small><span class="label">1.0.3</span></small></h2>
       
       <div class="badge-container">
         
@@ -345,7 +345,7 @@
           
             
             <li>
-              <a href="/schemas/arsante/schema-dae/1.0.2/schema.json">Schéma DAE 1.0.2 (format tableschema)</a>
+              <a href="/schemas/arsante/schema-dae/1.0.3/schema.json">Schéma DAE 1.0.3 (format tableschema)</a>
             </li>
             
           
@@ -354,6 +354,12 @@
           <li>Versions disponibles :
             <ul>
             
+            
+              <li>
+                <a href="/arsante/schema-dae/1.0.3.html">
+                  1.0.3
+                </a>
+              </li>
             
               <li>
                 <a href="/arsante/schema-dae/1.0.2.html">
@@ -375,7 +381,7 @@
       
       
       <div class="form__group" style="margin-top: 3em">
-        <a href="/arsante/schema-dae/1.0.2/documentation.html" title="Documentation du modèle de données" class="button icon-button">
+        <a href="/arsante/schema-dae/1.0.3/documentation.html" title="Documentation du modèle de données" class="button icon-button">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 22v-20h16v11.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6h-7.362zm18-7.614v-14.386h-20v24h10.189c3.163 0 9.811-7.223 9.811-9.614zm-5-1.386h-10v-1h10v1zm0-4h-10v1h10v-1zm0-3h-10v1h10v-1z"/></svg>
           Lire la documentation
         </a>
@@ -385,7 +391,7 @@
           Saisir des données
         </a>
 
-        <a href="https://validata.etalab.studio/table-schema?schema_url=https://schema.data.gouv.fr/schemas/arsante/schema-dae/1.0.2/schema.json" title="Valider des données" class="button icon-button">
+        <a href="https://validata.etalab.studio/table-schema?schema_url=https://schema.data.gouv.fr/schemas/arsante/schema-dae/1.0.3/schema.json" title="Valider des données" class="button icon-button">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
           Valider des données
         </a>
@@ -401,7 +407,7 @@
 <ul>
   <li>Schéma créé le : 01/01/2020</li>
   <li>Site web : https://gitlab.com/arsante/atlasante/schema-dae</li>
-  <li>Version : 1.0.2</li>
+  <li>Version : 1.0.3</li>
 </ul>
 
 <h3 id="modèle-de-données">Modèle de données</h3>
@@ -810,22 +816,22 @@
 <h4 id="pour-les-dae-non-disponibles-7j7-détail-de-la-disponibilité-de-lappareil---propriété-disp_j">Pour les DAE non-disponibles 7j/7, détail de la disponibilité de l’appareil - Propriété <code class="highlighter-rouge">disp_j</code></h4>
 
 <blockquote>
-  <p><em>Description : Liste de valeurs séparées par ‘|’ parmi :  7j/7, lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, jours fériés, événements<br />Ex : lundi|mercredi|vendredi</em></p>
+  <p><em>Description : Liste de valeurs séparées par ‘|’ parmi :  7j/7, lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, jours fériés, événements ou non renseigné (seul)<br />Ex : lundi|mercredi|vendredi</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : chaîne de caractères</li>
-    <li>Motif : <code class="highlighter-rouge">^(7j/7|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|jours fériés|événements){1}(\|(7j/7|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|jours fériés|événements))*$</code></li>
+    <li>Motif : <code class="highlighter-rouge">^(7j/7|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|jours fériés|événements){1}(\|(7j/7|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|jours fériés|événements))*$|^(non renseigné){1}$</code></li>
   </ul>
 </blockquote>
 
 <h4 id="pour-les-dae-non-disponibles-24h24-détail-de-la-disponibilité-de-lappareil---propriété-disp_h">Pour les DAE non-disponibles 24h/24, détail de la disponibilité de l’appareil - Propriété <code class="highlighter-rouge">disp_h</code></h4>
 
 <blockquote>
-  <p><em>Description : Liste de valeurs séparées par ‘|’ parmi : heures ouvrables, heures de nuit, 24h/24<br />Ex : heures ouvrables|heures de nuit</em></p>
+  <p><em>Description : Liste de valeurs séparées par ‘|’ parmi : heures ouvrables, heures de nuit, 24h/24, ou non renseigné (seul)<br />Ex : heures ouvrables|heures de nuit</em></p>
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : chaîne de caractères</li>
-    <li>Motif : <code class="highlighter-rouge">^(heures ouvrables|heures de nuit|24h/24){1}(\|(heures ouvrables|heures de nuit|24h/24))*$</code></li>
+    <li>Motif : <code class="highlighter-rouge">^(heures ouvrables|heures de nuit|24h/24){1}(\|(heures ouvrables|heures de nuit|24h/24))*$|^(non renseigné){1}$</code></li>
   </ul>
 </blockquote>
 
@@ -846,7 +852,7 @@
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : chaîne de caractères</li>
-    <li>Motif : <code class="highlighter-rouge">^(\+33|0|\+262|\+269|\+508|\+590|\+594|\+596|\+681|\+687|\+689)[1-9](\d\d){4}$</code></li>
+    <li>Motif : <code class="highlighter-rouge">^(\+33|\+590|\+594|\+262|\+596|\+269|\+687|\+689|\+590|\+508|\+681)(\d){6,9}$</code></li>
   </ul>
 </blockquote>
 
@@ -857,7 +863,7 @@
   <ul>
     <li>Valeur optionnelle</li>
     <li>Type : chaîne de caractères</li>
-    <li>Motif : <code class="highlighter-rouge">^(\+33|0|\+262|\+269|\+508|\+590|\+594|\+596|\+681|\+687|\+689)[1-9](\d\d){4}$</code></li>
+    <li>Motif : <code class="highlighter-rouge">^(\+33|\+590|\+594|\+262|\+596|\+269|\+687|\+689|\+590|\+508|\+681)(\d){6,9}$</code></li>
   </ul>
 </blockquote>
 
@@ -1069,7 +1075,7 @@
   <ul>
     <li>Valeur obligatoire</li>
     <li>Type : chaîne de caractères</li>
-    <li>Motif : <code class="highlighter-rouge">^(\+33|0|\+262|\+269|\+508|\+590|\+594|\+596|\+681|\+687|\+689)[1-9](\d\d){4}$</code></li>
+    <li>Motif : <code class="highlighter-rouge">^(\+33|\+590|\+594|\+262|\+596|\+269|\+687|\+689|\+590|\+508|\+681)(\d){6,9}$</code></li>
   </ul>
 </blockquote>
 
@@ -1080,7 +1086,7 @@
   <ul>
     <li>Valeur optionnelle</li>
     <li>Type : chaîne de caractères</li>
-    <li>Motif : <code class="highlighter-rouge">^(\+33|0|\+262|\+269|\+508|\+590|\+594|\+596|\+681|\+687|\+689)[1-9](\d\d){4}$</code></li>
+    <li>Motif : <code class="highlighter-rouge">^(\+33|\+590|\+594|\+262|\+596|\+269|\+687|\+689|\+590|\+508|\+681)(\d){6,9}$</code></li>
   </ul>
 </blockquote>
 
