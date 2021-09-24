@@ -94,7 +94,7 @@
             "contributors": 5
         },
         "etalab/schema-bal": {
-            "dgv_resources": 27,
+            "dgv_resources": 28,
             "title": "Base Adresse Locale (BAL)",
             "contributors": 3
         },
@@ -114,7 +114,7 @@
             "contributors": 3
         },
         "etalab/schema-irve": {
-            "dgv_resources": 231,
+            "dgv_resources": 232,
             "title": "Infrastructures de recharge pour v\u00e9hicules \u00e9lectriques",
             "contributors": 4
         },
@@ -134,7 +134,7 @@
             "contributors": 4
         },
         "etalab/schema-stationnement": {
-            "dgv_resources": 2,
+            "dgv_resources": 6,
             "title": "Lieux de stationnement",
             "contributors": 2
         },
