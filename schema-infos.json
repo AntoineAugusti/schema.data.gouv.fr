@@ -508,13 +508,19 @@
         "versions": {
             "0.6.1": {
                 "pages": [
-                    "CHANGELOG.md",
                     "README.md"
                 ],
                 "schema_url": "/etalab/schema-zfe/0.6.1/schema.json"
+            },
+            "0.7.0": {
+                "pages": [
+                    "CHANGELOG.md",
+                    "README.md"
+                ],
+                "schema_url": "/etalab/schema-zfe/0.7.0/schema.json"
             }
         },
-        "latest": "0.6.1",
+        "latest": "0.7.0",
         "homepage": "https://github.com/etalab/schema-zfe",
         "email": "contact@transport.beta.gouv.fr",
         "external_tool": null,
